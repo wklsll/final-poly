@@ -2,12 +2,27 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="final-poly" />
+        <module name="other-server1" />
+        <module name="other-server" />
+        <module name="connect-mysql" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="other-server" target="1.8" />
+      <module name="other-server1" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="connect-mysql" options="-parameters" />
+      <module name="final-poly" options="-parameters" />
+      <module name="other-server" options="-parameters" />
+      <module name="other-server1" options="-parameters" />
+    </option>
   </component>
 </project>
