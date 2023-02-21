@@ -11,6 +11,7 @@
     <modules>
         <module>connect-mysql</module>
         <module>other-server</module>
+        <module>school-zhuhai</module>
     </modules>
 
    <parent>
